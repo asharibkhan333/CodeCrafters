@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    height: 100vh;
+    background-image: url(c:/Users/hp/Downloads/silhouette-photography-trees.jpg);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container
+{
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 15px;
+}
+.form-title
+{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #fff;
+}
+.main-user-info
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n)
+{
+    justify-content: end;
+}
+.user-input-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label
+{
+    width: 95%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input
+{
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+.gender-title
+{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000;
+    border-bottom: 2px solid #fff;
+}
+.gender-category
+{
+    color: #fff;
+    margin: 15px 0;
+}
+.gender-category label
+{
+    padding: 0 20px 0 5px;
+}
+.gender-category input,
+.gender-category label,
+.form-submit-btn input
+{
+    cursor: pointer;
+}
+.form-submit-btn 
+{
+    padding-top: 40px;
+}
+.form-submit-btn input
+{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: rgba(209,209,209);
+    background-color: rgba(63,114,76,0.7);
+}
+.form-submit-btn input:hover
+{
+    background-color: rgba(56,204,53,0.7);
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user-info{
+        min-height: 380px;
+        width: 100%;
+    }
+    .main-user-info::-webkit-scrollbar{
+        overflow: auto;
+    }
+}
+
